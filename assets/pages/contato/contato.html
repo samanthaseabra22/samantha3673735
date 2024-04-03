@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contato.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../../index.html">Sobre mim</a></li>
+          <li><a href="../formação/formacao.html">Formação Educacional</a></li>
+          <li><a href="../portfolio/portfolio.html">Portifólio</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="form-container">
+        <form class="form" onsubmit="entrarEmContato(event)">
+          <span class="heading">Entre em contato comigo</span>
+          <input placeholder="Name" type="text" class="input" id="name" oninput="validarNome(this)"/>
+          <input placeholder="Email" id="email" type="email" class="input"  oninput="validarEmail(this)"/>
+          <span id="email-error" style="display: none; color: red;">Email inválido</span>
+          <textarea
+            placeholder="Me envie sua mensage"
+            rows="8"
+            cols="28"
+            id="message"
+            name="message"
+            class="textarea"
+          ></textarea>
+          <div class="submit-container">
+            <input type="submit" class="send-button" value="Enviar">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../assets/js/main.js"></script>
+    <script src="./contato.js"></script>
+  </body>
+</html>

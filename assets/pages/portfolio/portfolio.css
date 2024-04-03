@@ -1,0 +1,121 @@
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  flex-wrap: wrap;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  align-items: center;
+}
+
+.row {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card {
+  width: 380px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px -2px #bebebe;
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  height: 12em;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(#7980c5, #9198e5);
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+
+.img img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.text {
+  background: #001925;
+  border-radius: 0 0 10px 10px;
+  padding: 7px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.text .h3 {
+  font-family: system-ui;
+  font-size: medium;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.text .p {
+  font-family: system-ui;
+  color: #999999;
+  font-size: 13px;
+  margin: 0px;
+  text-align: center;
+  padding: 5px;
+}
+
+.icon-box {
+  margin: 10px;
+  padding: 12px;
+  background-color: #7980c5;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.icon-box .span {
+  font-family: system-ui;
+  font-size: small;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btnBox {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #f0dd60;
+  font-weight: bold;
+  background: #001925;
+  transition: all 0.2s ease-in-out;
+}
+
+.botao {
+  flex-basis: 100%;
+  background: #f0dd60;
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.botao:hover {
+  background: transparent;
+  border: 1px solid #f0dd60;
+  color: #f0dd60;
+}
